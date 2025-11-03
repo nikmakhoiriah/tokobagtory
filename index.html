@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Bagtory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🛍️ Toko Bagtory</h1>
+            <p>Koleksi Tas Untuk Wanita</p>
+            <div class="cart-icon" onclick="openCart()">
+                🛒 Keranjang
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </header>
+
+        <div class="products" id="products"></div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>🛒 Keranjang Belanja</h2>
+            <div id="cartItems"></div>
+            <div id="checkoutSection"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
